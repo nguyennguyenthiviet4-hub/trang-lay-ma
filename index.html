@@ -4,51 +4,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tiến Cường - Lấy Key</title>
+<title>TIEN CUONG - FF KEY</title>
 <style>
-body {
-  background:#071426;
-  color:white;
-  font-family:Arial,sans-serif;
-  text-align:center;
-  padding:40px 15px;
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;display:flex;align-items:center;
+  justify-content:center;padding:20px;font-family:Arial,sans-serif;
+  color:white;background:radial-gradient(circle at top,#103e69,#030711 70%);
 }
-.card {
-  max-width:400px;
-  margin:auto;
-  padding:25px;
-  background:#102442;
-  border:1px solid #168bff;
-  border-radius:18px;
+.card{
+  width:100%;max-width:390px;padding:28px 22px;text-align:center;
+  background:#071321;border:1px solid #00d9ff;border-radius:20px;
+  box-shadow:0 0 25px #00d9ff40;
 }
-button {
-  background:#087cff;
-  color:white;
-  border:0;
-  border-radius:10px;
-  padding:14px;
-  font-size:16px;
-  width:100%;
+.logo{font-size:30px;font-weight:900;color:#00e5ff}
+.sub{font-size:12px;letter-spacing:3px;color:#9bbdd5;margin-top:8px}
+h2{margin-top:30px}
+p{color:#bfd0df;font-size:14px;line-height:1.7}
+button{
+  width:100%;padding:15px;margin-top:13px;border-radius:9px;
+  font-weight:bold;font-size:15px;cursor:pointer;
 }
-#key {color:#62ffc0;font-weight:bold}
+.main{background:#00d9ff;color:#00121c;border:0}
+.alt{background:#102b40;color:white;border:1px solid #285a76}
+#status{margin-top:18px;font-size:13px;color:#00e5ff;line-height:1.6}
+footer{margin-top:25px;color:#6e8ca5;font-size:11px}
 </style>
 </head>
 <body>
 <div class="card">
-<h1>APP ĐỘ NHẠY FF</h1>
-<p>Trang lấy key thử nghiệm</p>
-<p id="status">Bấm nút để nhận key demo</p>
-<button onclick="window.location.href='https://link4m.org/JUOH7z'">
-<p id="key"></p>
+  <div class="logo">TIEN CUONG</div>
+  <div class="sub">FREE FIRE KEY SYSTEM</div>
+
+  <h2>NHẬN KEY MIỄN PHÍ</h2>
+  <p>
+    Bấm nút bên dưới để truy cập Link4M.
+    Sau khi hoàn thành các bước, hãy quay lại trang này.
+  </p>
+
+  <button class="main" onclick="getKey()">LẤY KEY</button>
+  <button class="alt" onclick="checkKey()">KIỂM TRA KEY</button>
+
+  <div id="status">Trạng thái: Chưa xác minh</div>
+  <footer>TIEN CUONG • FREE FIRE</footer>
 </div>
+
 <script>
-function getKey() {
-  LẤY KEY
-</button>
- document.getElementById("status").textContent =
- "Đã nhận key thử nghiệm!";
- document.getElementById("key").textContent =
- "TC-DEMO-1234";
+const LINK4M = "https://link4m.org/JUOH7z";
+
+function getKey(){
+  window.location.href = LINK4M;
+}
+
+function checkKey(){
+  document.getElementById("status").textContent =
+    "Link4M đã được gắn. Chưa thể xác minh hoàn thành hoặc cấp key tự động.";
 }
 </script>
 </body>
