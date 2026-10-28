@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiến Cường - Lấy Key</title>
+<style>
+body {
+  background:#071426;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+  padding:40px 15px;
+}
+.card {
+  max-width:400px;
+  margin:auto;
+  padding:25px;
+  background:#102442;
+  border:1px solid #168bff;
+  border-radius:18px;
+}
+button {
+  background:#087cff;
+  color:white;
+  border:0;
+  border-radius:10px;
+  padding:14px;
+  font-size:16px;
+  width:100%;
+}
+#key {color:#62ffc0;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>APP ĐỘ NHẠY FF</h1>
+<p>Trang lấy key thử nghiệm</p>
+<p id="status">Bấm nút để nhận key demo</p>
+<button onclick="getKey()">LẤY KEY</button>
+<p id="key"></p>
+</div>
+<script>
+function getKey() {
+ document.getElementById("status").textContent =
+ "Đã nhận key thử nghiệm!";
+ document.getElementById("key").textContent =
+ "TC-DEMO-1234";
+}
+</script>
+</body>
+</html>
